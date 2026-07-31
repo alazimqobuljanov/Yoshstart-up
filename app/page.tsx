@@ -9,7 +9,17 @@ import { CTASection } from "@/components/CTASection";
 import { SiteFooter } from "@/components/SiteFooter";
 
 export default async function HomePage() {
-  const { userId } = await auth();
+  let userId: string | null = null;
+
+  if (process.env.NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY && process.env.CLERK_SECRET_KEY) {
+    try {
+      const authResult = await auth();
+      userId = authResult.userId;
+    } catch {
+      userId = null;
+    }
+  }
+
   if (userId) {
     redirect("/dashboard");
   }

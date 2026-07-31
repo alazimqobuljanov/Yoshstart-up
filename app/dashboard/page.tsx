@@ -4,7 +4,16 @@ import { getRole } from "@/lib/roles";
 import { DashboardClient } from "@/components/DashboardClient";
 
 export default async function DashboardPage() {
-  const user = await currentUser();
+  let user = null;
+
+  if (process.env.NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY && process.env.CLERK_SECRET_KEY) {
+    try {
+      user = await currentUser();
+    } catch {
+      user = null;
+    }
+  }
+
   const email = user?.primaryEmailAddress?.emailAddress ?? user?.emailAddresses[0]?.emailAddress;
   const name = user ? (user.fullName ?? user.firstName ?? email) : null;
 

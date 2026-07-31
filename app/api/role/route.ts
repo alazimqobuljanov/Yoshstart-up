@@ -4,7 +4,16 @@ import { getRole, setRole } from "@/lib/roles";
 import type { Role } from "@/lib/types";
 
 export async function GET() {
-  const user = await currentUser();
+  let user = null;
+
+  if (process.env.NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY && process.env.CLERK_SECRET_KEY) {
+    try {
+      user = await currentUser();
+    } catch {
+      user = null;
+    }
+  }
+
   const email = user?.primaryEmailAddress?.emailAddress;
   if (!email) {
     return NextResponse.json({ error: "Ruxsat yo'q" }, { status: 401 });
@@ -14,7 +23,16 @@ export async function GET() {
 }
 
 export async function POST(req: Request) {
-  const user = await currentUser();
+  let user = null;
+
+  if (process.env.NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY && process.env.CLERK_SECRET_KEY) {
+    try {
+      user = await currentUser();
+    } catch {
+      user = null;
+    }
+  }
+
   const email = user?.primaryEmailAddress?.emailAddress;
   if (!email) {
     return NextResponse.json({ error: "Ruxsat yo'q" }, { status: 401 });
