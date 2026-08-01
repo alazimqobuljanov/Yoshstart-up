@@ -1,7 +1,10 @@
 "use client";
 
 import { createContext, useCallback, useContext, useState } from "react";
+import { ClerkProvider } from "@clerk/nextjs";
 import { CheckCircle2, XCircle } from "lucide-react";
+
+const hasClerkConfig = Boolean(process.env.NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY);
 
 interface Toast {
   id: number;
@@ -54,10 +57,18 @@ export function Providers({ children }: { children: React.ReactNode }) {
     }, 2600);
   }, []);
 
-  return (
+  const content = (
     <ToastContext.Provider value={{ showToast }}>
       {children}
       <ToastHost toasts={toasts} />
     </ToastContext.Provider>
+  );
+
+  return hasClerkConfig ? (
+    <ClerkProvider publishableKey={process.env.NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY!}>
+      {content}
+    </ClerkProvider>
+  ) : (
+    content
   );
 }

@@ -1,10 +1,7 @@
 import type { Metadata } from "next";
-import { ClerkProvider } from "@clerk/nextjs";
 import { Space_Grotesk, Inter, JetBrains_Mono } from "next/font/google";
 import { Providers } from "./providers";
 import "./globals.css";
-
-const hasClerkConfig = Boolean(process.env.NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY);
 
 const spaceGrotesk = Space_Grotesk({
   subsets: ["latin"],
@@ -34,13 +31,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
       <body
         className={`${spaceGrotesk.variable} ${inter.variable} ${jetbrainsMono.variable} font-sans text-ink antialiased`}
       >
-        {hasClerkConfig ? (
-          <ClerkProvider>
-            <Providers>{children}</Providers>
-          </ClerkProvider>
-        ) : (
-          <Providers>{children}</Providers>
-        )}
+        <Providers>{children}</Providers>
       </body>
     </html>
   );
