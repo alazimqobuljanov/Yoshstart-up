@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+<script>document.documentElement.classList.add('js');</script>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>[Ismingiz] — Portfolio</title>
+<meta name="description" content="[Ismingiz] — [Kasbingiz]. Kod, dizayn va hunar sohasidagi tanlangan ishlar.">
+<link rel="icon" type="image/svg+xml" href="/favicon.svg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<div class="grid-backdrop" aria-hidden="true"></div>
+<a class="skip-link" href="#main">Kontentga o'tish</a>
+
+<header class="site-header">
+  <nav class="nav" aria-label="Asosiy">
+    <a class="nav__mark" href="#top" aria-label="[Ismingiz] — bosh sahifa">
+      <svg viewBox="0 0 32 32" width="26" height="26" aria-hidden="true">
+        <circle class="mark__ring" cx="16" cy="16" r="10.5" fill="none" stroke="currentColor" stroke-width="1.5"/>
+        <line class="mark__tick" x1="16" y1="1" x2="16" y2="7" stroke="currentColor" stroke-width="1.5"/>
+        <line class="mark__tick" x1="16" y1="25" x2="16" y2="31" stroke="currentColor" stroke-width="1.5"/>
+        <line class="mark__tick" x1="1" y1="16" x2="7" y2="16" stroke="currentColor" stroke-width="1.5"/>
+        <line class="mark__tick" x1="25" y1="16" x2="31" y2="16" stroke="currentColor" stroke-width="1.5"/>
+        <circle class="mark__pin" cx="16" cy="16" r="1.6" fill="var(--amber)"/>
+      </svg>
+      <span>[I.F.]</span>
+    </a>
+    <button class="nav__toggle" id="navToggle" aria-expanded="false" aria-controls="navLinks" aria-label="Menyuni ochish/yopish">
+      <span></span><span></span><span></span>
+    </button>
+    <ul class="nav__links" id="navLinks">
+      <li><a href="#work">Ishlar</a></li>
+      <li><a href="#ai-work">AI Videolar</a></li>
+      <li><a href="#toolkit">Vositalar</a></li>
+      <li><a href="#log">Kundalik</a></li>
+      <li><a href="#contact" class="nav__cta">Aloqa</a></li>
+    </ul>
+  </nav>
+</header>
+
+<main id="main">
+
+  <section class="hero" id="top">
+    <div class="crosshair crosshair--tl" aria-hidden="true"></div>
+    <div class="crosshair crosshair--tr" aria-hidden="true"></div>
+    <div class="crosshair crosshair--bl" aria-hidden="true"></div>
+    <div class="crosshair crosshair--br" aria-hidden="true"></div>
+
+    <p class="eyebrow reveal">PORTFOLIO — TAHR. 01</p>
+    <h1 class="hero__name reveal">[Ismingiz]</h1>
+    <p class="hero__role reveal">[Kasbingiz — masalan, Mahsulot Dizayneri va Frontend Dasturchi]</p>
+    <p class="hero__bio reveal">[Qanday ish bilan shug'ullanishingiz va sizni nima undayotgani haqida bir-ikki gap. Buni o'z tanishtiruvingiz bilan almashtiring.]</p>
+
+    <div class="hero__actions reveal">
+      <a class="btn btn--primary" href="#work">Ishlarni ko'rish</a>
+      <a class="btn btn--ghost" href="#contact">Salom bering</a>
+    </div>
+
+    <div class="title-block reveal" role="group" aria-label="Hujjat tafsilotlari">
+      <div class="title-block__field"><span class="title-block__label">Chizgan</span><span class="title-block__value">[Ismingiz]</span></div>
+      <div class="title-block__field"><span class="title-block__label">Varaq</span><span class="title-block__value">01/04</span></div>
+      <div class="title-block__field"><span class="title-block__label">Masshtab</span><span class="title-block__value">N.T.S.</span></div>
+      <div class="title-block__field"><span class="title-block__label">Sana</span><span class="title-block__value">[2026]</span></div>
+      <div class="title-block__field"><span class="title-block__label">Tahr.</span><span class="title-block__value">A</span></div>
+    </div>
+  </section>
+
+  <section class="section" id="toolkit">
+    <div class="section__head">
+      <p class="eyebrow">ASBOBLAR PANELI</p>
+      <h2>Vositalar</h2>
+    </div>
+    <div class="panels">
+      <div class="panel">
+        <h3 class="panel__title"><span class="dot dot--code"></span>Kod</h3>
+        <ul class="chips">
+          <li>[Til]</li>
+          <li>[Til]</li>
+          <li>[Freymvork]</li>
+          <li>[Freymvork]</li>
+          <li>[Vosita]</li>
+        </ul>
+      </div>
+      <div class="panel">
+        <h3 class="panel__title"><span class="dot dot--design"></span>Dizayn</h3>
+        <ul class="chips">
+          <li>[Dizayn vositasi]</li>
+          <li>[Prototiplash]</li>
+          <li>[Dizayn tizimlari]</li>
+          <li>[Tipografiya]</li>
+          <li>[Animatsiya]</li>
+        </ul>
+      </div>
+      <div class="panel">
+        <h3 class="panel__title"><span class="dot dot--craft"></span>Qo'l mehnati</h3>
+        <ul class="chips">
+          <li>[Qo'l mahorati]</li>
+          <li>[Ishlab chiqarish]</li>
+          <li>[Material / Vosita]</li>
+          <li>[Qo'l mahorati]</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="work">
+    <div class="section__head">
+      <p class="eyebrow">LOYIHALAR JURNALI</p>
+      <h2>Tanlangan Ishlar</h2>
+    </div>
+
+    <div class="filters" role="group" aria-label="Loyihalarni soha bo'yicha filtrlash">
+      <button class="filter is-active" data-filter="all">Barchasi</button>
+      <button class="filter" data-filter="code">Kod</button>
+      <button class="filter" data-filter="design">Dizayn</button>
+      <button class="filter" data-filter="craft">Qo'l mehnati</button>
+    </div>
+
+    <!--
+      Har bir kartochka uchun faqat 3 narsa kerak: sarlavha, qisqa bio (bir gap), va havola.
+      <div class="card__thumb"></div> — sof CSS bilan chizilgan naqsh, hech qanday rasm yuklash shart emas.
+      "View project →" havolasini o'zingizning jonli sayt yoki dizayn (masalan, Figma) manzilingizga almashtiring.
+
+      "Code" toifasidagi kartochkalar ikkita havola bilan keladi — bittasi loyihaning ishlayotgan (jonli)
+      nusxasiga, ikkinchisi esa GitHub'dagi manba kodiga, shunda tashrif buyuruvchi kodni onlayn tarzda ham
+      ko'ra oladi.
+    -->
+    <div class="work-grid">
+      <article class="card" data-category="code">
+        <div class="card__thumb" aria-hidden="true"></div>
+        <div class="card__meta"><span class="dot dot--code"></span><span>Kod</span></div>
+        <h3 class="card__title">[Loyiha nomi 01]</h3>
+        <p class="card__desc">[Loyiha va u hal qilgan muammo haqida bir qatorli tavsif.]</p>
+        <div class="card__tags"><span>[Vosita]</span><span>[Vosita]</span></div>
+        <div class="card__links">
+          <a class="card__link" href="#" target="_blank" rel="noopener">Jonli namoyish →</a>
+          <a class="card__link" href="#" target="_blank" rel="noopener">Kodni ko'rish →</a>
+        </div>
+      </article>
+
+      <article class="card" data-category="design">
+        <div class="card__thumb" aria-hidden="true"></div>
+        <div class="card__meta"><span class="dot dot--design"></span><span>Dizayn</span></div>
+        <h3 class="card__title">[Loyiha nomi 02]</h3>
+        <p class="card__desc">[Loyiha va u hal qilgan muammo haqida bir qatorli tavsif.]</p>
+        <div class="card__tags"><span>[Vosita]</span><span>[Vosita]</span></div>
+        <a class="card__link" href="#" target="_blank" rel="noopener">Loyihani ko'rish →</a>
+      </article>
+
+      <article class="card" data-category="craft">
+        <div class="card__thumb" aria-hidden="true"></div>
+        <div class="card__meta"><span class="dot dot--craft"></span><span>Qo'l mehnati</span></div>
+        <h3 class="card__title">[Loyiha nomi 03]</h3>
+        <p class="card__desc">[Loyiha va u hal qilgan muammo haqida bir qatorli tavsif.]</p>
+        <div class="card__tags"><span>[Vosita]</span><span>[Vosita]</span></div>
+        <a class="card__link" href="#" target="_blank" rel="noopener">Loyihani ko'rish →</a>
+      </article>
+
+      <article class="card" data-category="code">
+        <div class="card__thumb" aria-hidden="true"></div>
+        <div class="card__meta"><span class="dot dot--code"></span><span>Kod</span></div>
+        <h3 class="card__title">[Loyiha nomi 04]</h3>
+        <p class="card__desc">[Loyiha va u hal qilgan muammo haqida bir qatorli tavsif.]</p>
+        <div class="card__tags"><span>[Vosita]</span><span>[Vosita]</span></div>
+        <div class="card__links">
+          <a class="card__link" href="#" target="_blank" rel="noopener">Jonli namoyish →</a>
+          <a class="card__link" href="#" target="_blank" rel="noopener">Kodni ko'rish →</a>
+        </div>
+      </article>
+
+      <article class="card" data-category="design">
+        <div class="card__thumb" aria-hidden="true"></div>
+        <div class="card__meta"><span class="dot dot--design"></span><span>Dizayn</span></div>
+        <h3 class="card__title">[Loyiha nomi 05]</h3>
+        <p class="card__desc">[Loyiha va u hal qilgan muammo haqida bir qatorli tavsif.]</p>
+        <div class="card__tags"><span>[Vosita]</span><span>[Vosita]</span></div>
+        <a class="card__link" href="#" target="_blank" rel="noopener">Loyihani ko'rish →</a>
+      </article>
+
+      <article class="card" data-category="craft">
+        <div class="card__thumb" aria-hidden="true"></div>
+        <div class="card__meta"><span class="dot dot--craft"></span><span>Qo'l mehnati</span></div>
+        <h3 class="card__title">[Loyiha nomi 06]</h3>
+        <p class="card__desc">[Loyiha va u hal qilgan muammo haqida bir qatorli tavsif.]</p>
+        <div class="card__tags"><span>[Vosita]</span><span>[Vosita]</span></div>
+        <a class="card__link" href="#" target="_blank" rel="noopener">Loyihani ko'rish →</a>
+      </article>
+    </div>
+  </section>
+
+  <section class="section" id="ai-work">
+    <div class="section__head">
+      <p class="eyebrow">SO'ROV ASOSIDA</p>
+      <h2>AI Yordamida Yaratilgan Ishlar</h2>
+    </div>
+
+    <!--
+      Bu yerga hech qanday video fayl yoki rasm yuklash shart emas.
+      Har bir kartochka uchun kerak: sarlavha, qisqa bio, video yaratishda ishlatgan PROMPT matni, va video
+      turgan joyga havola (YouTube, Google Drive, Instagram va h.k.). Havola orqali odamlar to'g'ridan-to'g'ri
+      videoni ko'radi, promptni esa shu sahifaning o'zida o'qiydi.
+    -->
+    <div class="work-grid">
+      <article class="card" data-category="ai">
+        <div class="card__thumb" aria-hidden="true"></div>
+        <div class="card__meta"><span class="dot dot--ai"></span><span>AI Video</span></div>
+        <h3 class="card__title">[Video nomi]</h3>
+        <p class="card__desc">[Qisqa bio — video nima haqida va qaysi AI vosita bilan yaratilgan.]</p>
+        <p class="card__prompt"><span class="card__prompt-label">Prompt</span>[Video yaratishda ishlatilgan aniq prompt matnini shu yerga qo'ying.]</p>
+        <a class="card__link" href="#" target="_blank" rel="noopener">Videoni ko'rish →</a>
+      </article>
+
+      <article class="card" data-category="ai">
+        <div class="card__thumb" aria-hidden="true"></div>
+        <div class="card__meta"><span class="dot dot--ai"></span><span>AI Video</span></div>
+        <h3 class="card__title">[Video nomi]</h3>
+        <p class="card__desc">[Qisqa bio — video nima haqida va qaysi AI vosita bilan yaratilgan.]</p>
+        <p class="card__prompt"><span class="card__prompt-label">Prompt</span>[Video yaratishda ishlatilgan aniq prompt matnini shu yerga qo'ying.]</p>
+        <a class="card__link" href="#" target="_blank" rel="noopener">Videoni ko'rish →</a>
+      </article>
+
+      <article class="card" data-category="ai">
+        <div class="card__thumb" aria-hidden="true"></div>
+        <div class="card__meta"><span class="dot dot--ai"></span><span>AI Video</span></div>
+        <h3 class="card__title">[Video nomi]</h3>
+        <p class="card__desc">[Qisqa bio — video nima haqida va qaysi AI vosita bilan yaratilgan.]</p>
+        <p class="card__prompt"><span class="card__prompt-label">Prompt</span>[Video yaratishda ishlatilgan aniq prompt matnini shu yerga qo'ying.]</p>
+        <a class="card__link" href="#" target="_blank" rel="noopener">Videoni ko'rish →</a>
+      </article>
+    </div>
+  </section>
+
+  <section class="section" id="log">
+    <div class="section__head">
+      <p class="eyebrow">DALA QAYDLARI</p>
+      <h2>Men Haqimda</h2>
+    </div>
+    <div class="about">
+      <div class="about__portrait" aria-hidden="true">
+        <svg viewBox="0 0 200 200" width="100%" height="100%" preserveAspectRatio="xMidYMid meet">
+          <rect x="0.5" y="0.5" width="199" height="199" fill="none" stroke="var(--panel-border)"/>
+          <circle cx="100" cy="100" r="70" fill="none" stroke="var(--panel-border)" stroke-width="1"/>
+          <circle cx="100" cy="100" r="46" fill="none" stroke="var(--line-blue)" stroke-width="1.4"/>
+          <line x1="100" y1="18" x2="100" y2="182" stroke="var(--panel-border)" stroke-width="1"/>
+          <line x1="18" y1="100" x2="182" y2="100" stroke="var(--panel-border)" stroke-width="1"/>
+          <path d="M100 54 L100 100 L138 122" fill="none" stroke="var(--amber)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+          <circle cx="100" cy="100" r="3" fill="var(--amber)"/>
+          <circle cx="100" cy="54" r="2.5" fill="var(--paper)"/>
+        </svg>
+      </div>
+      <div class="about__content">
+        <p>[Kelib chiqishingiz, qanday ishlashingiz va hozir nimaga e'tibor qaratayotganingiz haqida bir necha gap. Bu o'zingizga xos ohangda gapirish imkoniyati — ushbu placeholder matnni o'z hikoyangiz bilan almashtiring.]</p>
+        <ul class="log-list">
+          <li><span class="log-list__year">2024</span><span>[Siz yaratgan, o'rgangan yoki qurgan narsa.]</span></li>
+          <li><span class="log-list__year">2023</span><span>[Eslatib o'tish kerak bo'lgan muhim voqea.]</span></li>
+          <li><span class="log-list__year">2022</span><span>[Hammasi qayerdan boshlangani.]</span></li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section--contact" id="contact">
+    <div class="section__head">
+      <p class="eyebrow">UZATISH</p>
+      <h2>Signal Yuboring</h2>
+    </div>
+    <p class="contact__intro">[Frilans ish, hamkorlik yoki to'liq stavkali lavozimlarga ochiqman — buni hozir nima izlayotganingiz bilan almashtiring.]</p>
+    <div class="contact__links">
+      <a href="mailto:you@example.com">[siz@misol.com] <span aria-hidden="true">↗</span></a>
+      <a href="https://github.com/username" target="_blank" rel="noopener">[github.com/foydalanuvchi] <span aria-hidden="true">↗</span></a>
+      <a href="https://linkedin.com/in/username" target="_blank" rel="noopener">[linkedin.com/in/foydalanuvchi] <span aria-hidden="true">↗</span></a>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <p>© <span id="year">2026</span> [Ismingiz]. T-chizg'ich va klaviatura bilan qurilgan.</p>
+  <a href="#top">Tepaga qaytish ↑</a>
+</footer>
+
+<script type="module" src="/src/main.js"></script>
+</body>
+</html>
